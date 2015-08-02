@@ -1,0 +1,13 @@
+<div class="page-header">
+    <h1>Get Random User <button class="btn btn-primary" ng-click="home.getRandomUser()">Generate Random User</button></h1>
+</div>
+<div class="row" ng-if="app.currentUser">
+    <div class="col-sm-12" ng-if="home.user">
+        <pre ng-bind="home.user | json"></pre>
+    </div>
+</div>
+<div class="col-sm-6 col-sm-offset-3" ng-if="app.error">
+    <div class="alert alert-danger">
+        {{ app.error }}
+    </div>
+</div>
